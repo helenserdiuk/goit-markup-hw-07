@@ -97,34 +97,37 @@ p {
   text-decoration: none;
 }
 
-.nav-link:hover, .nav-link:focus,
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--link-text-color);
-}
-
 .contact-list .contact-link {
   display: flex;
   align-items: center;
   color: var(--primary-text-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-list .contact-link:hover .header-icons,
-.contact-list .contact-link:focus .header-icons {
-  fill: var(--link-text-color);
+.contact-list .contact-link:hover, .contact-list .contact-link:focus {
+  color: var(--link-text-color);
 }
 
 .nav-list .nav-link {
   display: flex;
   align-items: center;
   color: var(--title-text-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+}
+
+.nav-list .nav-link:hover, .nav-list .nav-link:focus {
+  color: var(--link-text-color);
 }
 
 .header-icons {
   fill: var(--primary-text-color);
   margin-right: 10px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-link:hover .header-icons,
+.contact-link:focus .header-icons {
+  fill: var(--link-text-color);
 }
 
 .nav-item:not(:last-child) {
