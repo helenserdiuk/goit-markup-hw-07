@@ -1,0 +1,19 @@
+.header{
+    border-bottom: 1px solid #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.container{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-header{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
