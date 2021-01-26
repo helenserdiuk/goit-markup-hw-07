@@ -43,14 +43,15 @@
     &:hover,
     &:focus{
         background: var(--second-text-color);
-    }
 
-    &:hover .modal-close-button-icon,
-    &:focus .modal-close-button-icon{
-        fill: var(--link-text-color);
+        & .modal-close-button-icon,
+        & .modal-close-button-icon{
+            fill: var(--link-text-color);
+        }
     }
-
+    
 }
+
 
 .modal-form{
     display: inline-flex;
@@ -73,16 +74,15 @@
     line-height: 1.67;
     letter-spacing: 0.01em;
     color: var(--primary-text-color);
+}
 
-    &:not(:last-child){
-        margin-bottom: 10px;
-    }
+.modal-field:not(:last-child){
+    margin-bottom: 10px;
 }
 
 .modal-wrapper{
     display: block;
     position: relative;
-    margin-top: 4px;
 }
 
 .modal-input{
@@ -100,14 +100,17 @@
 
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+
     &:focus{
         outline: none;
         border: 1px solid var(--link-text-color);
+
+        & + .modal-icon{
+            fill: var(--link-text-color);
+        }
     }
     
-    &:focus+ .modal-icon{
-        fill: var(--link-text-color);
-    }
+    
 }
 
 .modal-icon{
@@ -121,6 +124,8 @@
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
 .modal-comment{
     display: block;
     width: 100%;
@@ -129,7 +134,6 @@
     box-sizing: border-box;
     border-radius: 4px;
     padding: 12px 16px;
-    margin-top: 4px;
     margin-bottom: 10px;
     resize: none;
 
@@ -142,11 +146,12 @@
     &::placeholder{
         color: rgba(117, 117, 117, 0.5);
     }
-    
+
     &:focus{
         outline: none;
         border: 1px solid var(--link-text-color);
     }
+
 }
 
 .modal-checkbox{
@@ -187,30 +192,5 @@
 .polisy-link{
     margin-left: 4px;
     color: var(--link-text-color);
-}
-
-.modal-send{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    color: var(--second-text-color);
-
-    width: 200px;
-    height: 50px;
-    background: var(--link-text-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus{
-        background: #188CE8;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-    }
 }
 

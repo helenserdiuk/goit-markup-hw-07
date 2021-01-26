@@ -1,63 +1,44 @@
-
-button:hover,
-button:focus{
-    background: var(--link-text-color);
-    color: var(--second-text-color);
-}
-
-.main-button{
+.hero-button,
+.button-subscribe,
+.modal-send{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-
+    color: var(--second-text-color);
     background: var(--link-text-color);
-    color: var(--second-text-color); 
-    
-    border: 0;
-    padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-slice{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    border-radius: 4px;
-    
-    background: var(--second-backgraund-color);
-    color: var(--title-text-color);
+.hero-button{
     border: 0;
-    padding: 6px 22px;
-    border-radius: 4px;
-    margin-left: 8px;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 10px 32px;
+}
 
-    &:hover,
-    &:focus{
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
+.button-subscribe,
+.modal-send,{   
+    width: 200px;
+    height: 50px;
 }
 
 .button-subscribe{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    margin-left: 370px;
-    width: 200px;
-    background-color: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    color: var(--second-text-color);
+    margin-left: 12px;
 }
+
+.modal-send{
+    background: var(--link-text-color);
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover,
+    &:focus{
+        background: #188CE8;
+    }
+}
+

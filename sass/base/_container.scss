@@ -1,9 +1,3 @@
-.header{
-    border-bottom: 1px solid #ECECEC;
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
-
 .container{
     width: 1200px;
     margin-right: auto;
@@ -12,8 +6,28 @@
     padding-right: 15px;
 }
 
-.container-header{
+.section{
+    padding: 94px 0;
+
+   & + .section-team{
+        background-color: var(--second-backgraund-color);
+    }
+}
+
+.main-features{
+    padding-top: 94px;
+}
+
+.team-content{
+    padding: 30px 32px;
+    text-align: center;
+}
+
+.footerbox{
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+}
+
+.main-portfolio-content{
+    padding: 94px 0;
 }

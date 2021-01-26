@@ -1,76 +1,47 @@
-.nav-list,
-.contact-list{
+.nav-list{
     display: flex;
     align-items: center;
-}
 
-.nav-link,
-.contact-link{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    text-decoration: none;
-}
+    & .nav-link{
+        display: flex;
+        align-items: center;
+        color: var(--title-text-color);
+        position: relative;
 
-.contact-list .contact-link{
-    display: flex;
-    align-items: center;
-    color: var(--primary-text-color);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        text-decoration: none;
 
-    &:hover,
-    &:focus{
-        color: var(--link-text-color);
+        &:hover,
+        &:focus{
+            color: var(--link-text-color);
+        }
+
     }
-}
 
-.nav-list .nav-link{
-    display: flex;
-    align-items: center;
-    color: var(--title-text-color);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-
-    &:hover,
-    &:focus{
-        color: var(--link-text-color);
-    }
-    
-}
-
-.header-icons{
-    fill: var(--primary-text-color);
-    margin-right: 10px;
-}
-
-.contact-link:hover .header-icons,
-.contact-link:focus .header-icons{
-    fill: var(--link-text-color);
 }
 
 .nav-item:not(:last-child){
     margin-right: 50px;
 }
 
-.contact-item:not(:last-child){
-    margin-right: 30px;
-}
-
 .current .nav-link{
     color: var(--link-text-color);
-}
 
-.current .nav-link::after{
-    position: absolute;
-    bottom: -28px;
-    left: 0;
-    display: inline-block;
-    content: "";
-    height: 4px;
-    width: 100%;
-    color: var(--link-text-color);
-    background-color: var(--link-text-color);
-    border-radius: 2px;
+    &::after{
+        position: absolute;
+        bottom: -28px;
+        left: 0;
+        display: inline-block;
+        content: "";
+        height: 4px;
+        width: 100%;
+        color: var(--link-text-color);
+        background-color: var(--link-text-color);
+        border-radius: 2px;
+    }
+
 }
